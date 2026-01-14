@@ -1,0 +1,7 @@
+--Pergunta 5 - Qual o total de vendas, receita e ticket médio?
+
+select count(*) Total_Vendas,
+       round(sum(quantidade * preco_unitario)::numeric, 2) Receita,
+       round(avg(quantidade * preco_unitario)::numeric, 2) Ticket_medio
+from vendas
+
