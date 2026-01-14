@@ -1,0 +1,8 @@
+-- Pergunta 8: Faixas de produtos
+select p.nome_produto,
+      p.preco_atual,
+      case when preco_atual > 500 then 'Top'
+           when preco_atual > 100 then 'Medio'
+      else 'Barato'
+      end as Faixa
+from produtos p 
