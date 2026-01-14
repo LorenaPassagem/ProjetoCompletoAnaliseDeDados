@@ -1,0 +1,2 @@
+-- Pergunta 1 que o CEO quer responder: quais produtos temos no catalogo 
+select nome_produto from produtos
