@@ -1,0 +1,6 @@
+
+--Pergunta 2: quais o produtos mais caros?
+
+select * from produtos
+order by preco_atual desc
+limit 10
