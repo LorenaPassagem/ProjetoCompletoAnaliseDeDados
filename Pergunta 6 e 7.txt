@@ -1,0 +1,9 @@
+-- Pergunta 6: Como ver produto junto com vendas
+-- Pergunta 7: Quantas vendas e qual a receita total por categoria de produto?
+
+
+select p.categoria,
+       sum(v.quantidade * P.preco_atual) Total_Vendas
+from vendas v inner join produtos p on v.id_produto = p.id_produto
+group by p.categoria
+order by Total_Vendas desc
