@@ -1,0 +1,5 @@
+-- Pergunta 3 - Quais produtos custão mais que reais 500 reais
+select *
+from produtos
+where preco_atual > 500.00
+order by preco_atual desc
